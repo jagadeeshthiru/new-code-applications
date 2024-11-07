@@ -1,0 +1,49 @@
+class Inheritance
+{
+	public void employee()
+	{
+		System.out.println("work");
+
+	}
+}
+class Inher extends Inheritance
+{
+	public void teamLeader()
+	{
+		System.out.println("Main lead and work");
+	}
+}
+class Mul extends Inher
+{
+	public void manager() 
+	{
+        
+		System.out.println("PROJECT REVIEW");
+	}
+}
+class Div extends Mul
+{
+	public void hr() 
+	{
+        
+		System.out.println("Main Leader");
+	}
+}
+	
+class MainCLS23
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Main Starts");
+		Inheritance i1=new Inheritance();
+		Inher i2=new Inher();
+		Mul m1=new Mul();
+		Div d1=new Div();
+         i1.employee();
+		 i2.teamLeader();
+		 m1.manager();
+		 d1.hr();
+
+	}
+}
+
